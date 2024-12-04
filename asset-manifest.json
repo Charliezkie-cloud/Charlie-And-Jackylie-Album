@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Charlie-and-Jackylie-Album/static/css/main.58a77bf7.css",
-    "main.js": "/Charlie-and-Jackylie-Album/static/js/main.b08b2420.js",
+    "main.js": "/Charlie-and-Jackylie-Album/static/js/main.85d6385c.js",
     "static/js/453.0fe9a756.chunk.js": "/Charlie-and-Jackylie-Album/static/js/453.0fe9a756.chunk.js",
     "static/js/952.258c7ee1.chunk.js": "/Charlie-and-Jackylie-Album/static/js/952.258c7ee1.chunk.js",
     "index.html": "/Charlie-and-Jackylie-Album/index.html",
     "main.58a77bf7.css.map": "/Charlie-and-Jackylie-Album/static/css/main.58a77bf7.css.map",
-    "main.b08b2420.js.map": "/Charlie-and-Jackylie-Album/static/js/main.b08b2420.js.map",
+    "main.85d6385c.js.map": "/Charlie-and-Jackylie-Album/static/js/main.85d6385c.js.map",
     "453.0fe9a756.chunk.js.map": "/Charlie-and-Jackylie-Album/static/js/453.0fe9a756.chunk.js.map",
     "952.258c7ee1.chunk.js.map": "/Charlie-and-Jackylie-Album/static/js/952.258c7ee1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58a77bf7.css",
-    "static/js/main.b08b2420.js"
+    "static/js/main.85d6385c.js"
   ]
 }
