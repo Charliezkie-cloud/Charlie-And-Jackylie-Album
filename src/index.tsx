@@ -15,13 +15,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <div>
-        <Routes>
-          <Route path='/' element={<App/>}></Route>
-          <Route path='/our-letters' element={<OurLetters/>}></Route>
-          <Route path='/our-gallery' element={<OurGallery/>}></Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={<App/>}></Route>
+        <Route path='/our-letters' element={<OurLetters/>}></Route>
+        <Route path='/our-gallery' element={<OurGallery/>}></Route>
+      </Routes>
     </HashRouter>
   </React.StrictMode>
 );

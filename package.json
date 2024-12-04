@@ -1,8 +1,8 @@
 {
   "name": "charlie-and-jackylie-album",
-  "homepage": "https://charliezkie-cloud.github.io/Charlie-And-Jackylie-Album",
+  "homepage": "https://charliezkie-cloud.github.io/Charlie-and-Jackylie-Album/#/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@supabase/supabase-js": "^2.46.2",
     "@testing-library/jest-dom": "^5.17.0",
@@ -32,6 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-sass": "sass --watch src/sass:src/assets/css",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

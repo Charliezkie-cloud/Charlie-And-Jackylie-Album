@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1">
-                <Nav.Link href="/" active={activeLink === ""}>Home</Nav.Link>
+                <Nav.Link href="/Charlie-and-Jackylie-Album" active={activeLink === ""}>Home</Nav.Link>
                 <Nav.Link href="#our-letters" active={activeLink === "#our-letters"}>Our Letters</Nav.Link>
                 <Nav.Link href="#our-gallery" active={activeLink === "#our-gallery"}>Our Gallery</Nav.Link>
               </Nav>
