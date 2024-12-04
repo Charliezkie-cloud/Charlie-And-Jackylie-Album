@@ -1,2 +1,2 @@
-# Charlie-and-Jackylie-Album
- Our virtual album
+# Charlie and Jackylie Album
+Our virtual album...

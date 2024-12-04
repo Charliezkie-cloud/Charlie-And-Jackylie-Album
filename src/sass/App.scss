@@ -1,0 +1,108 @@
+$primary: #B7094C !default; // Deep Rose
+// $secondary:     #D8A7B1 !default;  // Muted Lilac
+// $success:       #F55A89 !default;  // Blush Pink
+// $info:          #FFB3C6 !default;  // Light Rose
+// $warning:       #FF8FAB !default;  // Soft Peach
+// $danger:        #D61C4E !default;  // Crimson Pink
+// $light:         #FFF4F8 !default;  // Ivory White
+// $dark:          #C77D8C !default;  // Dusty Rose
+
+$body-bg: #FFF4F8 !default; // Ivory White for a soft background
+$body-color: #B7094C !default; // Deep Rose for text
+
+$body-secondary-bg: #FFD6E0 !default; // Pale Pink for secondary background
+$body-secondary-color: rgba(#B7094C, 0.75) !default; // Semi-transparent Deep Rose
+
+$body-tertiary-bg: #FFB3C6 !default; // Light Rose for tertiary background
+$body-tertiary-color: rgba(#B7094C, 0.5) !default; // More transparent Deep Rose
+
+$body-emphasis-color: #D61C4E !default; // Crimson Pink for emphasized text
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  margin: 0;
+}
+
+.image-item {
+  object-fit: cover;
+  object-position: center;
+  height: 256px;
+  width: 256px;
+  cursor: pointer;
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.navbar {
+  .active {
+    font-weight: bold;
+  }
+}
+
+#heart {
+  position: relative;
+  display: inline-block;
+  animation: identifier 800ms infinite alternate;
+
+  .bottom {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transform: rotate(45deg);
+  }
+
+  .left {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    background: red;
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg) translateX(30px);
+  }
+
+  .right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    background: red;
+    bottom: 100%;
+    left: 100%;
+    transform: rotate(45deg) translateY(30px);
+  }
+}
+
+@keyframes identifier {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: scale(1.4);
+  }
+}
