@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Charlie-And-Jackylie-Album/static/css/main.58a77bf7.css",
+    "main.js": "/Charlie-And-Jackylie-Album/static/js/main.76000d11.js",
+    "static/js/453.0fe9a756.chunk.js": "/Charlie-And-Jackylie-Album/static/js/453.0fe9a756.chunk.js",
+    "static/js/952.258c7ee1.chunk.js": "/Charlie-And-Jackylie-Album/static/js/952.258c7ee1.chunk.js",
+    "index.html": "/Charlie-And-Jackylie-Album/index.html",
+    "main.58a77bf7.css.map": "/Charlie-And-Jackylie-Album/static/css/main.58a77bf7.css.map",
+    "main.76000d11.js.map": "/Charlie-And-Jackylie-Album/static/js/main.76000d11.js.map",
+    "453.0fe9a756.chunk.js.map": "/Charlie-And-Jackylie-Album/static/js/453.0fe9a756.chunk.js.map",
+    "952.258c7ee1.chunk.js.map": "/Charlie-And-Jackylie-Album/static/js/952.258c7ee1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58a77bf7.css",
+    "static/js/main.76000d11.js"
+  ]
+}
