@@ -97,10 +97,12 @@ const Login: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
         block: "center"
       });
       setSignUpValidated(false);
-      return setToast({
+      setToast({
         message: "Passwords must be identical.",
         show: true
       });
+      createAccountButton.innerHTML = "Create Account";
+      return createAccountButton.disabled = false;
     }
 
     if (password.length < 6) {
@@ -109,10 +111,12 @@ const Login: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
         block: "center"
       });
       setSignUpValidated(false);
-      return setToast({
+      setToast({
         message: "Password must be at least 6 characters",
         show: true
       });
+      createAccountButton.innerHTML = "Create Account";
+      return createAccountButton.disabled = false;
     }
 
     try {
@@ -130,17 +134,7 @@ const Login: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
         })
       ]);
 
-      if (!status) {
-        (form.password as HTMLInputElement).scrollIntoView({
-          behavior: "smooth",
-          block: "center"
-        });
-        setSignUpValidated(false);
-        return setToast({
-          message: "Something went wrong while creating your account, please try again.",
-          show: true
-        });
-      }
+      if (!status) return;
 
       await signOut(auth);
 
@@ -149,17 +143,21 @@ const Login: React.FC<{ isSignedIn: boolean }> = ({ isSignedIn }) => {
         show: true
       });
       setSignUpCollapse(false);
-      createAccountButton.innerHTML = "Creating...";
-      createAccountButton.disabled = true;
+      createAccountButton.innerHTML = "Create Account";
+      createAccountButton.disabled = false;
     } catch (error) {
-      console.error(error);
+      const message = (error as AuthError).message
+      console.error(message);
       setToast({
-        message: "Something went wrong while creating your account, please try again.",
+        message: message,
         show: true
       });
-      setSignUpCollapse(false);
-      createAccountButton.innerHTML = "Creating...";
-      createAccountButton.disabled = true;
+      (form.email as HTMLInputElement).scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      createAccountButton.innerHTML = "Create Account";
+      createAccountButton.disabled = false;
     }
   }
 
